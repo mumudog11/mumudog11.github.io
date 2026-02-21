@@ -1,0 +1,23 @@
+:root {
+    --pink: #FAD8D6;
+    --lighter-pink: #F9E7E7;
+    --beige: #EDB88B;
+    --gray: #2E282A;
+}
+
+body {
+    background-color: var(--lighter-pink);
+}
+
+p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    max-width: 700px;
+}
+
+.title-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
