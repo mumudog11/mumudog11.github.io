@@ -3,10 +3,20 @@
     --lighter-pink: #F9E7E7;
     --beige: #EDB88B;
     --gray: #2E282A;
+    --gold: #dcb57a;
+    --sky-blue: #5b9fde;
+    --dark-blue: #000322;
+    --slate: #212531;
+    --light-gray: #b4bbc3;
+    font-family: "Times New Roman", "Serif";
+    font-size: 1.2em;
 }
 
 body {
-    background-color: var(--lighter-pink);
+    background-color: black;
+    background-image: url("images/ISS_earth.en.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 p {
@@ -20,4 +30,71 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--sky-blue);
+    font-size: 2.4em;
+}
+
+.page-border {
+    padding: 0 70px;
+    margin-bottom: 70px;
+}
+
+.content-card {
+    background-color: var(--light-gray);
+    margin: auto;
+    opacity: 70%;
+    border: 5px solid var(--dark-blue);
+    margin-top: 5%;
+    width: fit-content;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.home-link {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.link-group {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    margin-left: 10px;
+}
+
+.tab-link {
+    background-color: var(--gold);
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    writing-mode: vertical-rl;
+}
+
+@media (max-width: 600px) {
+    .link-group {
+        position: absolute;
+        top: 15px;
+        left: 0;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 50px;
+        width: 100%;
+
+    }
+
+    .tab-link {
+        writing-mode: horizontal-tb;
+    }
+
+    .title-box {
+        font-size: 1.8em;
+    }
+
+    #home-page-title {
+        margin-top: 70px;
+    }
 }
