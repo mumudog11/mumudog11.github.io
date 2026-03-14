@@ -51,6 +51,7 @@ p {
 }
 
 .home-link {
+    color: var(--sky-blue);
     position: absolute;
     margin-top: 20px;
     margin-left: 20px;
