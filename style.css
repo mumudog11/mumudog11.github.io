@@ -8,15 +8,18 @@
     --dark-blue: #000322;
     --slate: #212531;
     --light-gray: #b4bbc3;
+    --space-black: #000002;
     font-family: "Times New Roman", "Serif";
     font-size: 1.2em;
 }
 
 body {
-    background-color: black;
+    height: 100vh;
+    background-color: var(--space-black);
+    background-position: center bottom;
+    background-attachment: fixed;
     background-image: url("images/ISS_earth.en.jpg");
-    background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
 }
 
 p {
@@ -61,7 +64,7 @@ p {
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 80%;
     margin-left: 10px;
 }
